@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to the flask Page</h1>
+    <table>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                NAME
+            </th>
+            <th>
+                CITY
+            </th>
+            <TH>
+                EDIT
+            </TH>
+            <TH>
+                DELETE
+            </TH>
+        </tr>
+
+        {% for data in datas %}
+<tr>
+    <td>{{ data.ID }}</td>
+    <td>{{ data.NAME }}</td>
+    <td>{{ data.AGE }}</td>
+    <td>{{ data.CITY }}</td>
+    <td></td>
+    <td></td>
+</tr>
+{% endfor %}
+
+        
+         
+    </table>
+</body>
+</html>
